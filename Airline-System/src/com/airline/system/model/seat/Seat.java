@@ -15,12 +15,9 @@ public class Seat {
 	}
 
 
-
 	public void setStatus(Status status) {
 		this.status = status;
 	}
-
-
 
 	public String getSeatNumber() {
 		return seatNumber;
