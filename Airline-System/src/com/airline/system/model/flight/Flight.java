@@ -5,7 +5,7 @@ import java.util.Map;
 public class Flight {
 	
 	private String flightNumber;
-	private Map seatMap;
+	private Plane planeType;
 	
 	public Flight(String flightNumber) {
 		this.flightNumber = flightNumber;
