@@ -9,6 +9,11 @@ public class Test {
 		
 		myFirstFlight.showAllSeat();
 		myFirstFlight.reserveRandomSet();
+		myFirstFlight.reserveRandomSet();
+		myFirstFlight.reserveRandomSet();
+		myFirstFlight.reserveRandomSet();
+		myFirstFlight.reserveRandomSet();
+
 		
 		
 

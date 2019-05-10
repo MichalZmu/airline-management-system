@@ -7,7 +7,6 @@ public class SeatGenerator {
 	public static TreeMap createSeats(int rows, int seatsInRow, int firstRowNumber) {
 		
 		TreeMap<String, Seat> seatMap = new TreeMap<>();
-		//TreeSet<Seat> seatMap = new TreeSet<>();
 		int rowsLimiter = firstRowNumber + rows;
 		for(Integer i=firstRowNumber;i<rowsLimiter;i++) {
 			char charIteration = 'a';
@@ -17,9 +16,7 @@ public class SeatGenerator {
 				sB.append(charIteration);
 				charIteration++;
 				
-				seatMap.put(sB.toString(), new Seat(sB.toString().toUpperCase()));
-				//seatMap.add(new Seat(sB.toString()));
-				
+				seatMap.put(sB.toString().toUpperCase(), new Seat(sB.toString().toUpperCase()));				
 				
 			}
 		}
