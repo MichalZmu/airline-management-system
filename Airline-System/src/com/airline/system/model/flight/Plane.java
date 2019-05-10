@@ -14,4 +14,22 @@ public class Plane {
 		this.seatMap = SeatGenerator.createSeats(rows, seatsInRow, firstRowNumber);
 	}
 
+	public Map getSeatMap() {
+		return seatMap;
+	}
+
+	public void setSeatMap(Map seatMap) {
+		this.seatMap = seatMap;
+	}
+
+	public String getPlaneNumber() {
+		return planeNumber;
+	}
+
+	public void setPlaneNumber(String planeNumber) {
+		this.planeNumber = planeNumber;
+	}
+	
+	
+
 }

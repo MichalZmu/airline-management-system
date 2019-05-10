@@ -22,8 +22,14 @@ public class Seat {
 	public String getSeatNumber() {
 		return seatNumber;
 	}
-
-
+	
+	public boolean isFree() {
+		if(status==Status.RESERVED)
+		{
+			return false;
+		}
+		return true;
+	}
 
 	public enum Status{
 		AVAILABLE, RESERVED;

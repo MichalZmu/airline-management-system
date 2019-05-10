@@ -17,7 +17,7 @@ public class SeatGenerator {
 				sB.append(charIteration);
 				charIteration++;
 				
-				seatMap.put(sB.toString(), new Seat(sB.toString()));
+				seatMap.put(sB.toString(), new Seat(sB.toString().toUpperCase()));
 				//seatMap.add(new Seat(sB.toString()));
 				
 				
