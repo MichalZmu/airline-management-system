@@ -14,7 +14,6 @@ public class Seat {
 		return status;
 	}
 
-
 	public void setStatus(Status status) {
 		this.status = status;
 	}

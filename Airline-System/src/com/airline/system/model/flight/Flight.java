@@ -97,7 +97,7 @@ public class Flight {
 		
 	}
 	
-	public void reserveChosenSeat(String providedSeatNubmer) {
+	public void reserveGivenSeat(String providedSeatNubmer) {
 		
 		Seat tempObject = (Seat) seatMap.get(providedSeatNubmer);
 		
