@@ -22,31 +22,21 @@ public class Flight {
 		seatMap = (TreeMap<String, Object>) plane.getSeatMap();
 	}
 	
-	
-	
 	public Plane getPlaneNumber() {
 		return planeNumber;
 	}
-
-
 
 	public void setPlaneNumber(Plane planeNumber) {
 		this.planeNumber = planeNumber;
 	}
 
-
-
 	public String getFlightNumber() {
 		return flightNumber;
 	}
 
-
-
 	public String getDestination() {
 		return destination;
 	}
-
-
 
 	public String getOrigin() {
 		return origin;
@@ -59,9 +49,8 @@ public class Flight {
 		for (Map.Entry<String, Object> entry : seatMap.entrySet()) {
 			
 		    System.out.println(entry.getKey());
-		    
-		}	
-		
+		   
+		}
 	}
 	
 	
@@ -71,10 +60,8 @@ public class Flight {
 		    Seat tempObject = (Seat) entry.getValue();
 		    if(tempObject.isFree()) {
 		    	System.out.println(entry.getKey());
-		    }
-		    
+		    } 
 		}	
-		
 	}
 	
 	public void reserveRandomSeat() {
@@ -89,12 +76,10 @@ public class Flight {
 			    System.out.println("Seat: " + tempObject.getSeatNumber());
 			    break;
 		    }
-		      
 		}
 		if(noEmptySeat) {
 			System.out.println("No empty seats, sorry.");
 		}
-		
 	}
 	
 	public void reserveGivenSeat(String providedSeatNubmer) {
