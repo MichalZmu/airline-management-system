@@ -64,6 +64,18 @@ public class Flight {
 		
 	}
 	
+	public void showEmptySeats() {
+		System.out.println("List of available seats:");
+		for (Map.Entry<String, Object> entry : seatMap.entrySet()) {
+		    Seat tempObject = (Seat) entry.getValue();
+		    if(tempObject.isFree()) {
+		    	System.out.println(entry.getKey());
+		    }
+		    
+		}	
+		
+	}
+	
 	public void reserveRandomSet() {
 		boolean noEmptySeat = true;
 		for (Map.Entry<String, Object> entry : seatMap.entrySet()) {
