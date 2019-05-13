@@ -8,13 +8,19 @@ public class Test {
 		Flight myFirstFlight = new Flight("Lot 111", myFirstPlane, "Wieden", "Krakow");
 		
 		
-		myFirstFlight.reserveRandomSet();
-		myFirstFlight.reserveRandomSet();
-		myFirstFlight.reserveRandomSet();
-		myFirstFlight.reserveRandomSet();
-		myFirstFlight.reserveRandomSet();
+		myFirstFlight.reserveRandomSeat();
+		myFirstFlight.reserveRandomSeat();
+		myFirstFlight.reserveRandomSeat();
+		myFirstFlight.reserveRandomSeat();
+		myFirstFlight.reserveRandomSeat();
 		
 		myFirstFlight.showEmptySeats();
+		
+		myFirstFlight.reserveChosenSeat("10A");
+		myFirstFlight.releaseGivenSeat("10A");
+		
+		myFirstFlight.showEmptySeats();
+
 		
 		
 

@@ -64,6 +64,7 @@ public class Flight {
 		
 	}
 	
+	
 	public void showEmptySeats() {
 		System.out.println("List of available seats:");
 		for (Map.Entry<String, Object> entry : seatMap.entrySet()) {
@@ -76,7 +77,7 @@ public class Flight {
 		
 	}
 	
-	public void reserveRandomSet() {
+	public void reserveRandomSeat() {
 		boolean noEmptySeat = true;
 		for (Map.Entry<String, Object> entry : seatMap.entrySet()) {
 						
@@ -94,7 +95,35 @@ public class Flight {
 			System.out.println("No empty seats, sorry.");
 		}
 		
+	}
+	
+	public void reserveChosenSeat(String providedSeatNubmer) {
 		
+		Seat tempObject = (Seat) seatMap.get(providedSeatNubmer);
+		
+		if(tempObject != null && tempObject.isFree())
+		{
+			tempObject.setStatus(Status.RESERVED);
+			System.out.println("Your seat has been reserved");
+		    System.out.println("Seat: " + tempObject.getSeatNumber());
+		}
+		else {
+			System.out.println("We are unable to reserve provided seat number: " + providedSeatNubmer);
+		}
+	}
+	
+	public void releaseGivenSeat(String providedSeatNubmer) {
+		
+		Seat tempObject = (Seat) seatMap.get(providedSeatNubmer);
+		if(tempObject != null && !tempObject.isFree())
+		{
+			tempObject.setStatus(Status.AVAILABLE);
+			System.out.println("Your seat has been relased");
+		    System.out.println("Seat: " + tempObject.getSeatNumber());
+		}
+		else {
+			System.out.println("We are unable to relase provivded seat number: " + providedSeatNubmer);
+		}
 	}
 
 }
